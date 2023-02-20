@@ -8,8 +8,10 @@ st.title('異常検知用可視化ツール')
 st.caption('csvファイルの多次元データを二次元or三次元上にプロットします')
 with st.form(key = 'profile_form'):
         #テキストボックス
-        name = st.text_input('名前')
-        adress = st.text_input('住所')
+        # name = st.text_input('名前')
+        # adress = st.text_input('住所')
+        
+        st.file_uploader("csvファイルアップロード", type='csv')
         
         #セレクトボックス
         plot_dim = st.radio(
